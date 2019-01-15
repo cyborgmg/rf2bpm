@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<lote>
+    <cabecalho operacao="operacao" sistemaorigem="sistemaOrigem" timestamp="timestamp"/>
+    <item>
+        <payload><![CDATA[<inicioMigracaoContaPagamento><cpf>89298409912</cpf><codigoPessoa>800823122</codigoPessoa><numeroConta>6385793</numeroConta><solicitanteMigracao>CRGR</solicitanteMigracao><motivoSolicitacaoMigracao>AUMENTO_LIMITE</motivoSolicitacaoMigracao><idCallback>HSJD73894939</idCallback><serviceIdCallback>processAccountMigrationCredit</serviceIdCallback></inicioMigracaoContaPagamento>]]></payload>
+    </item>
+</lote>
