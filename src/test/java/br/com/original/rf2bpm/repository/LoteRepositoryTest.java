@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Before;
@@ -76,10 +78,22 @@ public class LoteRepositoryTest {
 
 	@Test
 	public void lerArquivos(){
+		/*
 		arquivoRepository.findAll().forEach(arquivo->{
 			System.out.println(arquivo.toString());
 			arquivo.getLinhas().forEach(linha->System.out.println(linha.toString()));
+			
+			arquivoRepository.deleteById(arquivo.getId());
 		});
+		*/
+		List<Arquivo> arquivos = new ArrayList<Arquivo>(arquivoRepository.findAll());
+		//arquivoRepository.findAll().forEach(arquivo->arquivos.add(arquivo));
+		
+		for (Arquivo arquivo : arquivos) {
+			System.out.println("......................"+arquivo.getId());
+			arquivoRepository.deleteById(arquivo.getId());
+		}
+		
 	}
 	
 }
